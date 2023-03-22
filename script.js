@@ -3,32 +3,32 @@ import { rendezesObjektum, rendezesSzam, rendezesSzoveg, veletlenSorrend } from 
 
 $(function () {
   console.log(SZOVEGLISTA);
-  rendezesObjektum(rendezesSzoveg(SZOVEGLISTA)); /**lista címét adja át */
+rendezesSzoveg(SZOVEGLISTA); /**lista címét adja át */
   console.log(SZOVEGLISTA);
   console.log("***************");
 
   console.log(SZAMLISTA);
-  rendezesObjektum(rendezesSzoveg(SZAMLISTA));
+  rendezesSzoveg(SZAMLISTA);
   console.log(SZAMLISTA);  
   console.log("***************");
   
   console.log(SZAMLISTA);
-  rendezesObjektum(veletlenSorrend(SZAMLISTA));
+  veletlenSorrend(SZAMLISTA);
   console.log(SZAMLISTA)
   console.log("***************");
 
   
   console.log(SZOVEGLISTA);
-  rendezesObjektum(veletlenSorrend(SZOVEGLISTA));
+  (veletlenSorrend(SZOVEGLISTA));
   console.log(SZOVEGLISTA);
   console.log("***************");
 
   //KOrszerint növekvő sorrendbe
   console.log(OBJEKTUMLISTA);
-  rendezesObjektum(rendezesSzamSzerint(OBJEKTUMLISTA, "kor"));
+  rendezesObjektum(OBJEKTUMLISTA, "kor");
   console.log(OBJEKTUMLISTA);
 
   console.log(OBJEKTUMLISTA);
-  rendezesObjektum(rendezesSzovegSzerint(OBJEKTUMLISTA, "nev"));
+  rendezesObjektum(OBJEKTUMLISTA, "nev");
   console.log(OBJEKTUMLISTA);
 });
